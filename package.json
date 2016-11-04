@@ -1,0 +1,33 @@
+{
+  "name": "tslint-cgalvarez-rules",
+  "version": "0.1.0",
+  "description": "Set of rules for tslint",
+  "main": "tslint.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cgalvarez/tslint-cgalvarez-rules.git"
+  },
+  "scripts": {
+    "git:push": "git push -u origin master --force --follow-tags"
+  },
+  "keywords": [
+    "tslint",
+    "rules"
+  ],
+  "author": {
+    "name": "Carlos García Álvarez",
+    "email": "cgalvarez.engineer@gmail.com",
+    "url": "https://carlosgarcia.engineer/"
+  },
+  "bugs": {
+    "url": "https://github.com/cgalvarez/tslint-cgalvarez-rules/issues",
+    "email": "cgalvarez.engineer@gmail.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "tslint-eslint-rules": "^2.1.0",
+    "tslint-microsoft-contrib": "^2.0.13",
+    "vrsource-tslint-rules": "^0.14.1"
+  }
+}

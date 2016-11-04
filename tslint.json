@@ -1,0 +1,323 @@
+{
+  "extends": "tslint:latest",
+  "linterOptions": {
+    "typeCheck": true
+  },
+  "rules": {
+    // tslint
+    // rules: http://palantir.github.io/tslint/rules/
+    "adjacent-overload-signatures": true,
+    "object-literal-shorthand": true,
+
+
+    // tslint-eslint-rules/tslint.json
+    // rules: https://github.com/buzinas/tslint-eslint-rules
+    "no-constant-condition": [true, {"checkLoops": true}],
+    "no-control-regex": true,
+    "no-duplicate-case": true,
+    "no-empty-character-class": true,
+    "no-ex-assign": true,
+    "no-extra-boolean-cast": true,
+    "no-extra-semi": true,
+    "no-inner-declarations": true,
+    "no-invalid-regexp": true,
+    "no-irregular-whitespace": true,
+    "no-multi-spaces": [true, {"exceptions": {
+      "BinaryExpression": false,
+      "PropertyAssignment": false,
+      "VariableDeclaration": false
+    }}],
+    "no-regex-spaces": true,
+    "no-sparse-arrays": true,
+    "no-unexpected-multiline": true,
+    "object-curly-spacing": true,
+    "use-isnan": true,
+    "valid-typeof": true,
+    "valid-jsdoc": [true, {
+      "prefer": {"return": "returns"},
+      "requireReturn": true,
+      "requireParamDescription": true,
+      "requireReturnDescription": true,
+      "matchDescription": "^[A-Z][A-Za-z0-9\\s]*[.]$"
+    }],
+    // problematic
+    "array-bracket-spacing": [true, "always", {
+      "singleValue": false,
+      "objectsInArrays": false,
+      "arraysInArrays": false
+    }],
+    "block-spacing": [true, "always"],
+    "brace-style": [true, "1tbs", {"allowSingleLine": true}],
+    "handle-callback-err": [true, "^(err|error)$"],
+
+
+
+
+    // tslint-microsoft-contrib/tslint.json
+    // rules: https://github.com/Microsoft/tslint-microsoft-contrib
+    "align": [true, "parameters", "arguments", "statements"],
+    "arrow-parens": true,
+    "chai-prefer-contains-to-index-of": true,
+    "chai-vague-errors": true,
+    "class-name": true,
+    "comment-format": [true, "check-space", "check-lowercase"],
+    "curly": true,
+    "eofline": true,
+    "export-name": true,
+    "forin": true,
+    "function-name": [true, {
+      "method-regex": "^[a-z][\\w\\d]+$",
+      "private-method-regex": "^_[a-z][\\w\\d]+$",
+      "static-method-regex": "^[A-Z][\\w\\d]+$",
+      "function-regex": "^[a-z][\\w\\d]+$"
+    }],
+    "import-name": true,
+    "indent": [true, "spaces"],
+    "insecure-random": true,
+    "interface-name": [true, "always-prefix"],
+    "jquery-deferred-must-complete": true,
+    "jsdoc-format": true,
+    "label-position": true,
+    "label-undefined": true,
+    "linebreak-style": [true, "LF"],
+    "max-file-line-count": true,
+    "max-func-body-length": [true, 100, {"ignore-parameters-to-function-regex": "describe"}],
+    "max-line-length": [true, 140],
+    "member-access": [true, "check-accessor", "check-constructor"],
+    "member-ordering": [true, {"order": "fields-first"}],
+    "missing-jsdoc": true,
+    "mocha-avoid-only": true,
+    "mocha-no-side-effect-code": true,
+    "mocha-unneeded-done": true,
+    "new-parens": true,
+    "no-angle-bracket-type-assertion": true,
+    "no-any": true,
+    "no-arg": true,
+    "no-backbone-get-set-outside-model": true,
+    "no-banned-terms": true,
+    "no-bitwise": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": true,
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "log",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-constant-condition": true,
+    "no-construct": true,
+    "no-constructor-vars": true,
+    "no-control-regex": true,
+    "no-cookies": true,
+    "no-debugger": true,
+    "no-default-export": true,
+    "no-delete-expression": true,
+    "no-disable-auto-sanitization": true,
+    "no-document-domain": true,
+    "no-document-write": true,
+    "no-duplicate-key": true,
+    "no-duplicate-case": true,
+    "no-duplicate-variable": true,
+    "no-empty": true,
+    "no-empty-interfaces": true,
+    "no-empty-line-after-opening-brace": true,
+    "no-eval": true,
+    "no-exec-script": true,
+    "no-for-in": true,
+    "no-function-constructor-with-string-args": true,
+    "no-function-expression": true,
+    "no-http-string": true,
+    "no-increment-decrement": true,
+    "no-inferrable-types": true,
+    "no-inner-html": true,
+    "no-internal-module": true,
+    "no-invalid-regexp": true,
+    "no-invalid-this": true,
+    "no-jquery-raw-elements": true,
+    "no-mergeable-namespace": true,
+    "no-multiline-string": true,
+    "no-namespace": [true, "allow-declarations"],
+    "no-null-keyword": true,
+    "no-octal-literal": true,
+    "no-reference": true,
+    "no-regex-spaces": true,
+    "no-relative-imports": true,
+    "no-require-imports": true,
+    "no-reserved-keywords": true,
+    "no-shadowed-variable": true,
+    "no-single-line-block-comment": true,
+    "no-sparse-arrays": true,
+    "no-stateless-class": true,
+    "no-string-based-set-immediate": true,
+    "no-string-based-set-interval": true,
+    "no-string-based-set-timeout": true,
+    "no-string-literal": true,
+    "no-suspicious-comment": true,
+    "no-switch-case-fall-through": true,
+    "no-trailing-whitespace": true,
+    "no-typeof-undefined": true,
+    "no-unnecessary-bind": true,
+    "no-unnecessary-field-initialization": true,
+    "no-unnecessary-local-variable": true,
+    "no-unnecessary-override": true,
+    "no-unnecessary-semicolons": true,
+    "no-unreachable": true,
+    "no-unsafe-finally": true,
+    "no-unsupported-browser-code": true,
+    "no-unused-expression": true,
+    "no-unused-new": true,
+    "no-unused-variable": true,
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+    "no-var-requires": true,
+    "no-var-self": true,
+    "no-with-statement": true,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "object-literal-sort-keys": true,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-finally",
+      "check-else",
+      "check-whitespace"
+    ],
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "only-arrow-functions": true,
+    "ordered-imports": [true, {
+      "import-sources-order": "case-insensitive",
+      "named-imports-order": "case-insensitive"
+    }],
+    "possible-timing-attack": true,
+    "prefer-array-literal": true,
+    "prefer-const": true,
+    "prefer-type-cast": false,
+    "promise-must-complete": true,
+    "quotemark": [true, "single", "avoid-escape"],
+    "radix": true,
+    "react-a11y-anchors": true,
+    "react-a11y-aria-unsupported-elements": true,
+    "react-a11y-event-has-role": true,
+    "react-a11y-image-button-has-alt": true,
+    "react-a11y-img-has-alt": true,
+    "react-a11y-lang": true,
+    "react-a11y-meta": true,
+    "react-a11y-props": true,
+    "react-a11y-proptypes": true,
+    "react-a11y-role": true,
+    "react-a11y-role-has-required-aria-props": true,
+    "react-a11y-role-supports-aria-props": true,
+    "react-a11y-tabindex-no-positive": true,
+    "react-a11y-titles": true,
+    "react-anchor-blank-noopener": true,
+    "react-iframe-missing-sandbox": true,
+    "react-no-dangerous-html": true,
+    "react-this-binding-issue": true,
+    "react-unused-props-and-state": true,
+    "restrict-plus-operands": true,
+    "semicolon": [true, "always"],
+    "switch-default": true,
+    "trailing-comma": [true, {
+      "singleline": "never",
+      "multiline": "never"
+    }],
+    "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "arrow-parameter",
+      "indexSignature",
+      "property-declaration",
+      "propertySignature",
+      "variable-declaration",
+      "variableDeclarator",
+      "memberVariableDeclarator",
+      "member-variable-declaration"
+    ],
+    "typedef-whitespace": [true, {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }, {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+    }],
+    "underscore-consistent-invocation": [true, {"style": "static"}],
+    "use-isnan": true,
+    "use-named-parameter": true,
+    "use-strict": [true, "check-module", "check-function"],
+    "valid-typeof": true,
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-module",
+      "check-operator",
+      "check-separator",
+      "check-type",
+      "check-typecast"
+    ],
+    // should be customized
+    "ban": false,
+    "no-unexternalized-strings": false,
+    // requires type-check
+    "no-for-in-array": false,
+    // deprecated
+    "missing-optional-annotation": false,
+    "no-duplicate-parameter-names": false,
+    "no-missing-visibility-modifiers": false,
+    "no-multiple-var-decl": false,
+    "no-unused-imports": false,
+
+
+
+
+    // vrsource-tslint-rules
+    // rules: https://github.com/vrsource/vrsource-tslint-rules
+    "conditional-expression-parens": true,
+    "dot-notation": [true, {"allow-pattern": "^[a-z]+(_[a-z]+)+$"}],
+    "ext-variable-name": [
+      true,
+      ["class", "pascal"],
+      ["interface", "pascal", {"regex": "^I[A-Z][a-z]+$"}],
+      ["parameter", "camel"],
+      ["property", "private", {"regex": "^_([A-Z][a-z]+(?:[A-Z][a-z]+)*|[a-z]+(?:[A-Z][a-z]+)*|[A-Z][A-Z_]+|[A-Z][A-Z_]+)$"}], // _PrivEnum, _privProp, _PRIV_CONST
+      ["property", "public", "protected", {"regex": "^([A-Z][a-z]+(?:[A-Z][a-z]+)*|[a-z]+(?:[A-Z][a-z]+)*|[A-Z][A-Z_]+)$"}], // ClassEnum, classProp, CLASS_CONST
+      ["variable", "local", "camel"], // localVar
+      ["variable", "const", {"regex": "^(_|[A-Z][a-z]+(?:[A-Z][a-z]+)*|[a-z]+(?:[A-Z][a-z]+)*|[A-Z][A-Z_]+)$"}], // _, Enum, modName, CONSTANT
+      ["method", "private", {"regex": "^_[a-z]+(?:[A-Z][a-z]+)*"}], // _privMethod
+      ["method", "camel"], // classMethod
+      ["method", "static", "pascal"], // StaticMethod
+      ["method", "static", "private", {"regex": "^_[A-Z][a-z]+(?:[A-Z][a-z]+)*"}], // _PrivMethod
+      ["function", {"regex": "^_?[a-z]+(?:[A-Za-z]+)*$"}] // publicScopeFunc, _privScopeFunc
+    ],
+    "literal-spacing": [true, {
+      "array": ["always"],
+      "object": ["always"],
+      "import": ["always"]
+    }],
+    "max-params": [true, 4],
+    "multiline-arrow": [true, "require-parens", "require-block"],
+    "no-duplicate-imports": true,
+    "no-param-reassign": true,
+    "no-jasmine-focus": true,
+    "prefer-const": true,
+    "prefer-literal": [true, "object", "function", "array"]
+  },
+  "rulesDirectory": [
+    "../tslint-eslint-rules/dist/rules",
+    "../tslint-microsoft-contrib",
+    "../vrsource-tslint-rules/rules"
+  ]
+}
