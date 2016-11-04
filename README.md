@@ -47,3 +47,9 @@ There are two different files you can extend:
 * `tslint-cgalvarez-rules/tslint-ide.json`: use it when using atom.
 
 Since you cannot provide a custom path to your `tslint.json` when using the atom package `linter-tslint`, I recommend extending `tslint-cgalvarez-rules/tslint-ide.json` in your `tslint.json`, and creating a separate `tslint-cl.json` which extends `tslint-cgalvarez-rules/tslint.json` and can be provided in the command line like `tslint --config tslint-cl.json --type-check ...`.
+
+## FAQ
+
+### Atom errors: `Refused to evaluate a string as JavaScript because 'unsafe-eval'`
+
+If you suffer [this issue](https://github.com/AtomLinter/linter-tslint/issues/120), use `typescript@next`, which solves it with [this commit](https://github.com/Microsoft/TypeScript/commit/4162897350209538a64941916aca6235e58daca4) that hasn't been released yet.

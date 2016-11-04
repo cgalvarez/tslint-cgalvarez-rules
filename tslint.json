@@ -12,6 +12,14 @@
 
     // tslint-eslint-rules/tslint.json
     // rules: https://github.com/buzinas/tslint-eslint-rules
+    "array-bracket-spacing": [true, "always", {
+      "singleValue": false,
+      "objectsInArrays": false,
+      "arraysInArrays": false
+    }],
+    "block-spacing": [true, "always"],
+    "brace-style": [true, "1tbs", {"allowSingleLine": true}],
+    "handle-callback-err": [true, "^(err|error)$"],
     "no-constant-condition": [true, {"checkLoops": true}],
     "no-control-regex": true,
     "no-duplicate-case": true,
@@ -40,15 +48,6 @@
       "requireReturnDescription": true,
       "matchDescription": "^[A-Z][A-Za-z0-9\\s]*[.]$"
     }],
-    // problematic
-    "array-bracket-spacing": [true, "always", {
-      "singleValue": false,
-      "objectsInArrays": false,
-      "arraysInArrays": false
-    }],
-    "block-spacing": [true, "always"],
-    "brace-style": [true, "1tbs", {"allowSingleLine": true}],
-    "handle-callback-err": [true, "^(err|error)$"],
 
 
 
@@ -217,7 +216,6 @@
     "react-no-dangerous-html": true,
     "react-this-binding-issue": true,
     "react-unused-props-and-state": true,
-    "restrict-plus-operands": true,
     "semicolon": [true, "always"],
     "switch-default": true,
     "trailing-comma": [true, {
@@ -272,7 +270,8 @@
     "ban": false,
     "no-unexternalized-strings": false,
     // requires type-check
-    "no-for-in-array": false,
+    "no-for-in-array": true,
+    "restrict-plus-operands": true,
     // deprecated
     "missing-optional-annotation": false,
     "no-duplicate-parameter-names": false,
